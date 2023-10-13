@@ -25,7 +25,6 @@ function countStudents(path) {
     console.log(`Number of students: ${result.filter((check) => check.length > 3).length}`);
 
     Object.keys(final).forEach((data) => console.log(`Number of students in ${data}: ${final[data]}. List: ${list.filter((n) => n[1] === data).map((n) => n[0]).join(', ')}`));
-
   } catch (err) {
     throw Error('Cannot load the database');
   }
